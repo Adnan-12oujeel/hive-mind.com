@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adnan-12oujeel.github.io/hive-mind.com/sitemap.xml
