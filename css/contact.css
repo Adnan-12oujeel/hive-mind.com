@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    background-image: url(../images/contact/bg2.jpg), url(../images/contact/bg.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: 50% 100%, 50% 100%;
+    height: 400px;
+}
+.social-container {
+    position: relative;
+    height: 25vh;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+}
+
+.social-container .icon {
+    position: absolute;
+    font-size: 2.5rem;
+    transition: transform 1s ease;
+    top: 0;
+    left: 0;
+}
+/* ألوان مخصصة للأيقونات */
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-instagram {
+    color: #e1306c;
+}
+
+.fa-linkedin-in {
+    color: #0077b5;
+}
+
+.fa-telegram-plane {
+    color: #0088cc;
+}
+.fa-whatsapp{
+    color: green;
+}
+
+/* الفورم */
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+}

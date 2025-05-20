@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    background-image: url(../images/slide2.jpg);
+    height: 75vh;
+    /* background-repeat: repeat-x;  */
+    background-position: top;
+    background-size: cover;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 40px;
+    z-index: -50;
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card-face img{
+    width: 50%;
+}
+
+.card-front {
+    background-color: #00000033;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    background-color: white;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #121010;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+    color: #000;
+}
+
+.card-back button {
+    background-color: #121010;
+    color: white;
+    margin-top: 20px;
+}
+.card-back button:hover {
+    background-color: #fff;
+    color: #121010;
+}
+
+.courses img {
+    width: 200px;
+    height: 200px;
+}
+
+.courses-content {
+    flex-direction: column;
+}
+
+#iconArea {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    background: #f0f0f0;
+    /* فقط لتوضيح المساحة */
+}
+
+.icon {
+    position: absolute;
+    font-size: 2rem;
+    animation-name: float;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: calc(100% * var(--i));
+    left: -50px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(110vw);
+    }
+}
+.courses-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container.f-ard {
+    background-image: url(../images/courses/bg.jpg), url(../images/courses/english.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: 50% 100%, 50% 100%;
+}
+.course-image img{
+    border-radius: 100% 0% 100% 1% / 100% 100% 100% 0%;
+}
+.course img{
+    height: 150px;
+}
+.course-content{
+    flex-direction: column;
+}
+.register{
+    color: #fff;
+    background-color: #00000033;
+    border: 3px solid orangered;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+.register:hover{
+    color: #000;
+    background-color: #fff;
+}
+/* الحاوية */
+#animation {
+    position: relative;
+    height: 25vh;
+    background: #f0f0f0;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    perspective: 800px;
+    /* لتأثير ثلاثي الأبعاد */
+}
+
+/* الرمز */
+.animation .icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #007bff, #00cfff);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
+    transition: transform 1s ease, left 1s ease, top 1s ease;
+}
+
+/* تأثير دوران عند التحريك */
+.animation .icon:hover {
+    transform: rotateY(180deg) scale(1.2);
+}
+.comment {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.comment h4 {
+    margin: 0;
+    color: #4CAF50;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment small {
+    color: gray;
+}

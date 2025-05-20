@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIVE MIND</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/hivemind_icon_circular.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="mobile-logo f-cen">
+            <img src="images/WhatsApp Image 2025-05-03 at 21.01.18_94b2d6d9.jpg" alt="">
+            <a href="index.html" class="header__logo txt-white">HIVE</a>
+            <a href="index.html" class="header__logo txt-primary">MIND</a>
+        </div>
+
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+                <div class="nav__perfil f-cen">
+                    <div class="nav__img">
+                        <img src="images/WhatsApp Image 2025-05-03 at 21.01.18_94b2d6d9.jpg" alt="">
+                    </div>
+
+                    <div class="f-ard txt-2">
+                        <a href="index.html" class="nav__name txt-primary">MIND</a>
+                        <a href="index.html" class="nav__name txt-white">HIVE</a>
+                    </div>
+                </div>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active">الصفحة الرئيسية</a></li>
+                        <li class="nav__item"><a href="#courses" class="nav__link">الكورسات</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">من نحن</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://whatsapp.com/channel/0029Vb1w8OuBfxoAht6lZ836" target="_blank" class="nav__social-icon whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="https://www.facebook.com/share/1MBMiZpbkL/" target="_blank" class="nav__social-icon facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/vibetaem?igsh=bXI3OGt3NGtvemxk" target="_blank" class="nav__social-icon instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://t.me/hive_mind" target="_blank" class="nav__social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ================================================================== -->
+    <section class="container f-ard"></section>
+    <!-- ================================================================== -->
+    <div class="moving-container" id="iconArea">
+        <!-- سيتم إدراج العناصر هنا من خلال JavaScript -->
+    </div>
+    <!-- ================================================================== -->
+    <div class="cards f-bet">
+        <!-- بطاقة 1 -->
+        <div class="card-container f-cen">
+            <div class="card">
+                <div class="card-face card-front">
+                    <h1 class="txt-center">دروس أون لاين</h1>
+                    <img src="images/online-lesson.gif" alt="">
+                    <button onclick="flipCard(this)">المزيد</button>
+                </div>
+                <div class="card-face card-back f-cen">
+                    <img src="images/laptop.gif" alt="">
+                    <p class="txt-center">تعلم بسهولة واحترافية من أي مكان... دروس أون لاين تجمع بين الراحة والجودة.</p>
+                    <button onclick="flipCard(this)">رجوع</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة 2 -->
+        <div class="card-container">
+            <div class="card">
+                <div class="card-face card-front">
+                    <h1 class="txt-center">دروس حضورية</h1>
+                    <img src="images/training.gif" alt="">
+                    <button onclick="flipCard(this)">المزيد</button>
+                </div>
+                <div class="card-face card-back f-cen">
+                    <img src="images/teacher.gif" alt="">
+                    <p class="txt-center">تواصل مباشر، تفاعل فعّال... دروس حضورية لتجربة تعلم حقيقية ومميزة.</p>
+                    <button onclick="flipCard(this)">رجوع</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة 3 -->
+        <div class="card-container">
+            <div class="card">
+                <div class="card-face card-front">
+                    <h1 class="txt-center">شهادات معتمدة</h1>
+                    <img src="images/diploma.gif" alt="">
+                    <button onclick="flipCard(this)">المزيد</button>
+                </div>
+                <div class="card-face card-back f-cen">
+                    <img src="images/certificate.gif" alt="">
+                    <p class="txt-center">شهادات معتمدة تُمنح بعد إتمام الدورات، موثوقة من جهات رسمية أو تعليمية، وتُعزز فرصك في العمل أو مواصلة التعليم.</p>
+                    <button onclick="flipCard(this)">رجوع</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة 4 -->
+        <div class="card-container">
+            <div class="card">
+                <div class="card-face card-front">
+                    <h1 class="txt-center">مدربين محترفين</h1>
+                    <img src="images/professor.gif" alt="">
+                    <button onclick="flipCard(this)">المزيد</button>
+                </div>
+                <div class="card-face card-back f-cen">
+                    <img src="images/teacher.gif" alt="">
+                    <p class="txt-center">مدربون محترفون بخبرة عملية ومعرفية، يقدّمون المعلومة بأسلوب واضح وتفاعلي يضمن فهمك وتطورك.</p>
+                    <button onclick="flipCard(this)">رجوع</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================================== -->
+    <div class="courses-container">
+        <div class="courses f-evn" id="courses">
+            <img src="images/slide1.jpg" alt="courses-image">
+            <div class="courses-content f-cen">
+                <h1>الكورسات</h1>
+                <span class="txt-center w-500">كورسات احترافية مصممة لتناسب جميع المستويات وتمنحك المعرفة التي تحتاجها للتميز.</span>
+                <button type="button" class="btn" onclick="window.location.href = 'courses.html'">عرض الكورسات</button>
+            </div>
+        </div>
+        <div class="courses f-evn" id="about">
+            <img src="images/Screenshot (478).png" alt="courses-image">
+            <div class="courses-content f-cen">
+                <h1>من نحن</h1>
+                <span class="txt-center w-500">نحن فريق شغوف ومتخصص يجمع بين الخبرة والإبداع لنقدّم لك أفضل ما لدينا. اكتشف قصتنا
+                    وتعرّف على من يقف خلف هذا العمل.</span>
+                <button type="button" class="btn" onclick="window.location.href = 'about.html'">من نحن ؟</button>
+            </div>
+        </div>
+        <div class="courses f-evn" id="contact">
+            <img src="images/Screenshot (480).png" alt="courses-image">
+            <div class="courses-content f-cen">
+                <h1>تواصل معنا</h1>
+                <span class="txt-center w-500">كورسات احترافية مصممة لتناسب جميع المستويات وتمنحك المعرفة التي تحتاجها
+                    للتميز.</span>
+                <button type="button" class="btn" onclick="window.location.href = 'contact.html'">تواصل معنا </button>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- القائمة اليمنى -->
+            <div class="footer-section footer-menu">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="courses.html">الكورسات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <!-- الوسط: شعار واسم الفريق -->
+            <div class="footer-section footer-center">
+                <img src="images/WhatsApp Image 2025-05-03 at 21.01.18_94b2d6d9.jpg" alt="">
+                <div class="f-ard">
+                    <h2 class="txt-primary">MIND</h2>
+                    <h2>HIVE </h2>
+                </div>
+            </div>
+
+            <!-- اليسار: أيقونات التواصل -->
+            <div class="footer-section footer-social">
+                <a href="https://whatsapp.com/channel/0029Vb1w8OuBfxoAht6lZ836"><i class="fab fa-whatsapp whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/1MBMiZpbkL/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/vibetaem?igsh=bXI3OGt3NGtvemxk"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/hive_mind"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- الحقوق -->
+    <div class="copyright bg-black txt-white f-cen w-100 p12">
+        مصمم الموقع<strong>ADNAN AL-OUJEEL</strong>
+    </div>
+    <div class="copyright bg-black txt-white f-cen w-100 p12">
+        2025 جميع الحقوق محفوظة لفريق <strong>HIVEMIND</strong>&copy;
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
